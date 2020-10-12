@@ -10,7 +10,7 @@ const Works = () => {
     const [works, setWorks] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/works')
+        fetch('https://thawing-mountain-11421.herokuapp.com/works')
             .then(response => response.json())
             .then(data => setWorks(data))
     }, []);

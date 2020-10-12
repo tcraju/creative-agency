@@ -7,7 +7,7 @@ const Feedback = () => {
     const [feedback, setFeedback] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/feedback')
+        fetch('https://thawing-mountain-11421.herokuapp.com/feedback')
             .then(response => response.json())
             .then(data => setFeedback(data))
     }, []);
